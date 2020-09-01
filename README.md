@@ -10,18 +10,11 @@ A parent is responsible for each pupil (unless the pupil is a self-entitled guar
 
 ---
 
-Parents(<ins>SVR:int</ins>, name:varchar, adresse:varchar, tel:varchar, birthday:timestamp)
-
-Student(<ins>SVR:int</ins>, name:varchar, adresse:varchar, tel:varchar, marks:int, siblings:boolean, birthday:timestamp)
-
-Subject(<ins>ID:int</ins>, name:varchar, teacher:varchar, room:varchar, obligationGroup:double, kind:boolean)
-
-class(<ins>ID:int</ins>, name:varchar, year:int, departmentname:varchar, headteacher:varchar, respresentative:varchar, cashier:varchar)
-
+Department(<ins>name:varchar</ins>, headteacher:varchar, teacher:varchar, subjects:varchar)
 Curriculum(<ins>ID:int</ins>, year:int, departmentname:varchar, subjects:varchar )
-
-Department(<ins>name:varchar</ins>, headteacher:varchar, teacher:varchar)
-
-Teacher(<ins>SVR:int</ins>, masterdepartmend:varchar, subjects:varchar, class:varchar, birthday:timestamp)
-
-teach(<ins>StudentSVR:int</ins>, semesterMark:int, yearMark:in, year:int)
+Subject(<ins>ID:int</ins>, name:varchar, teacher:varchar, room:varchar, obligationGroup:double, kind:boolean)
+class(<ins>ID:int</ins>, name:varchar, year:int, departmentname:varchar, headteacher:varchar, respresentative:varchar, cashier:varchar)
+Parents(<ins>SVR:int</ins>, name:varchar, adresse:varchar, tel:varchar, birthday:timestamp)
+Student(<ins>SVR:int</ins>, name:varchar, adresse:varchar, tel:varchar, marks:int, siblings:varchar, birthday:timestamp)
+Teacher(<ins>SVR:int</ins>, masterDepartmend:varchar, subjects:varchar, class:varchar, birthday:timestamp)
+teach(<ins>year:int</ins>, studentSVR:int, semesterMark:int, yearMark:in)
