@@ -1,0 +1,80 @@
+Department	
+key:	department_Name
+	head_Teacher
+
+Curriculum
+key:	departmentname
+key:	teacher_SVN
+	subject#
+	room
+	class#
+	year
+
+Teacher	
+key:	teacher_SVN
+	master_department
+	name
+	address
+	Tel#
+
+Subject
+key:	subject#
+	name
+	kind
+	obligation_Group
+	obligation_Group_factor
+
+Class
+key:	class#
+	name
+	respresentative
+	cashier
+
+Student
+key:	student_SVN
+	name
+	address
+	Tel#
+
+Sibling
+key:	student_SVN
+	sibling_SVN
+
+Parent
+key:	parent_SVN
+	name
+	address
+	Tel#
+
+part_of_Teacher_Department
+key:	department_Name
+key:	teacher_SVN
+
+teach_Teacher_Subject
+key:	teacher_SVN
+key:	subject#
+key:	student_SVN
+	year
+	semester_Mark
+	year_Mark
+
+teach_Teacher_Class
+key:	teacher_SVN
+key:	class#
+
+responsible_Student_Student
+key:	student_1_SVN
+key:	student_2_SVN
+
+responsible_Student_Parents
+key:	student_SVN
+key:	parent_SVN
+
+attend_Student_Subject
+key:	student_SVN
+key:	subject#
+
+contain_Curriculum_Subject
+key:	departmentname
+key:	teacher_SVN
+key:	subject#
