@@ -1,14 +1,16 @@
 Department	
 key:	department_Name
 	head_Teacher
+	teacher_SVN
 
 Curriculum
 key:	departmentname
+key:	year
 key:	teacher_SVN
+	class#
 	subject#
 	room
-	class#
-	year
+	lesson_Time
 
 Teacher	
 key:	teacher_SVN
@@ -76,5 +78,4 @@ key:	subject#
 
 contain_Curriculum_Subject
 key:	departmentname
-key:	teacher_SVN
 key:	subject#
