@@ -10,7 +10,7 @@ A parent is responsible for each pupil (unless the pupil is a self-entitled guar
 
 ---
 
-Department(<ins>name:varchar</ins>, headteacher:varchar, teacher:varchar, subjects:varchar)<br>
+Department(<ins>name:varchar</ins>, headteacher:varchar, subjects:varchar)<br>
 Curriculum(<ins>ID:int</ins>, year:int, departmentname:varchar, subjects:varchar)<br>
 Subject(<ins>ID:int</ins>, name:varchar, teacher:varchar, room:varchar, obligationGroup:int, factor:double, kind:boolean)<br>
 class(<ins>ID:int</ins>, name:varchar, year:int, departmentname:varchar, headteacher:varchar, respresentative:varchar, cashier:varchar)<br>
